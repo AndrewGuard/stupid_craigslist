@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th> Description </th>
+    <th> Location </th>
+    <th> Price </th>
+    <th> Phone </th>
+  </tr>
+    <% @posts.each do |post| %> 
+  <tr>
+    <td><%= post.description%></td>
+    <td><%= post.location%></td>
+    <td><%= post.price%></td>
+    <td><%= post.phone%></td>
+    <td><a href=<%= "/post/#{post.id}/delete"%> >DELETE</a></td>
+
+  </tr>
+  <% end %> 
+</ul>

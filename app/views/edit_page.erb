@@ -1,0 +1,17 @@
+<h1> Edit your information! </h1>
+
+  <form action="/new_post" method="post">
+
+    <label for="description">Description: </label>
+    <input id="description" type="text" name="description" value=<%=@post.description%>><br><br>
+
+    <label>Location: <input id="location" type="text" name="location" value=<%=@post.location%>></label><br><br>
+
+    <label>Price: <input id="price" type="text" name="price" value=<%=@post.price%>></label><br><br>
+
+    <label>Phone: <input id="phone" type="text" name="phone" value=<%=@post.phone%>></label><br><br>
+
+
+    <input type="submit" value="Add your post!">
+  </form> 
+
